@@ -4,89 +4,80 @@
 @import 'libs/skel';
 
 /*
-	Phantom by HTML5 UP
+	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Form */
+/* Type */
 
-	form {
-		.field {
-			float: none !important;
-			width: 100% !important;
-			padding-left: 0 !important;
-		}
+	body {
+		color: _palette(fg-bold);
 	}
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
 	.button {
-		border: solid 2px _palette(fg) !important;
-
-		&:hover {
-			border-color: _palette(accent1) !important;
-		}
+		position: relative;
+		border: solid 1px !important;
 
 		&.special {
 			border: none !important;
 		}
 	}
 
-/* Tiles */
+/* Icon */
 
-	.tiles {
-		article {
-			> .image {
-				&:before, &:after {
-					display: none;
-				}
+	.icon {
+		&.major {
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+
+			&:before {
+				font-size: 4em;
+				border: 0;
 			}
 		}
 	}
 
-/* Header */
+/* Spotlight */
 
-	#header {
-		.logo {
-			.symbol {
-				display: none;
+	.spotlight {
+		.image {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+
+			img {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
 			}
 		}
+	}
 
-		nav {
-			ul {
-				li {
-					a[href="#menu"] {
-						text-indent: 0;
-						width: auto;
-						font-size: 0.8em;
+/* Features */
 
-						&:before, &:after {
-							display: none;
-						}
-					}
-				}
-			}
+	.features {
+		li {
+			width: 29%;
 		}
 	}
 
 /* Footer */
 
 	#footer {
-		> .inner {
-			section {
-				width: 50%;
-				margin-left: 3em;
+		> * {
+			width: 50%;
+			margin-left: 0;
+		}
+	}
 
-				&:first-child {
-					margin-left: 0;
-					width: 40%;
-				}
+/* Main */
+
+	#main {
+		> .main {
+			> .image.main:first-child {
+				margin-top: 0;
+				margin-left: 0;
+				width: 100%;
 			}
 		}
 	}
